@@ -2,6 +2,7 @@
 \documentclass[letterpaper, 10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{xifthen}
+\usepackage{multicol}
 \usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
 \usepackage{graphicx}
 \usepackage{fontspec}
@@ -47,7 +48,7 @@
 
 % Making the \entry command
 \newcommand{\entry}[4]{
-    \begin{minipage}[t]{.15 \linewidth}
+    \begin{minipage}[t]{.18 \linewidth}
         \hfill \textsc{#1}
     \end{minipage}
     \hfill \vline \hfill
@@ -72,13 +73,34 @@
 
 \maketitle
 
-\section{Basic Info}
+\section{Contact Info}
+\begin{multicols}{2}
+  \begin{itemize}
+    \item Email: vikrom.nar@gmail.com
+    \item Phone-number: (+66)86-979-2917
+    \item Website: \href{https://narula2000.github.io/}{narula2000.github.io}
+    \item GitHub: \href{https://github.com/narula2000}{github.com/narula2000}
+  \end{itemize}
+\end{multicols}
 
-Graduated from \href{https://muic.mahidol.ac.th/eng}{Mahidol University International College}
-in bachelor degree of Computer Science, interested in back-end development and
-machine learning. Projects and contact information can be found on
-\href{https://github.com/narula2000}{Github}, or on my
-\href{https://narula2000.github.io/}{website}. \\
+\section{Work Experiences}
+
+\entry{Apr 2022 -- Aug 2022}
+  {\href{https://www.agoda.com/}{Agoda: Back-end Developer Intern Team}}
+  {.NET, Scala, Play, Hadoop, Microsoft SQL Server, React, Gitlab CI/CD}
+  {Internship}
+
+
+\entry{Jan 2022 -- Feb 2022}
+  {\href{https://thegang.tech/?lang=en}{The Gang Technology: Django Python Back-end Developer}}
+  {Django, Python, Swagger, PostgreSQL}
+  {Part-time}
+
+
+\entry{Feb 2019 -- Dec 2019}
+  {Marketing Company: React TypeScript Back-end Developer}
+  {Node.js, React, TypeScript, GraphQL, PostgreSQL}
+  {Full-time, Part-time}
 
 \section{Education}
 
@@ -87,27 +109,10 @@ machine learning. Projects and contact information can be found on
   {Undergraduate}
   {Computer Science, CGPA: 3.1}
 
-
 \entry{2007--2018}
   {\href{https://www.repsbanchang.com}{Rayong English Programme School}}
   {High School, Middle School}
   {Science, GPA: 3.4}
-
-\section{Work Experiences}
-
-\entry{Internship}
-  {\href{https://www.agoda.com/}{Agoda: Back-end Developer Team}}
-  {.NET, Scala, Play, Hadoop, Microsoft SQL Server, React, Gitlab CI/CD}
-
-
-\entry{Part Time}
-  {\href{https://thegang.tech/?lang=en}{The Gang Technology: Django Python Back-end Developer}}
-  {Django, Python, Swagger, PostgreSQL}
-
-
-\entry{Part Time}
-  {Marketing Company: React TypeScript Back-end Developer}
-  {Node.js, React, TypeScript, GraphQL, PostgreSQL}
 
 \section{Projects and Tools}
 
