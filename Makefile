@@ -1,4 +1,4 @@
 compile:
-	xelatex -jobname=cv index.tex
+	lualatex -interaction nonstopmode -jobname=resume index.tex && lualatex -interaction nonstopmode -jobname=resume index.tex
 clean:
-	rm *.aux *.log
+	rm *.aux *.log *.out
